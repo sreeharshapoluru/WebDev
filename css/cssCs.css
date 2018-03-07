@@ -1,0 +1,125 @@
+
+body{
+    background-color: azure;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #555555;
+    font-size: 18px;
+    font-weight: bold;
+
+    /* Instead of typing of of the above, you can mention all the font proprties in a single go */
+
+    font: bold 18px Arial, Helvetica, sans-serif;
+}
+
+.clr{
+    clear: both;
+}
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    color:red;
+}
+
+a:active{
+    color:green;
+}
+
+a:visited{
+    color:grey;
+}
+
+.button{
+    background-color: #555555;
+    color:#fff;
+    border:solid #333 1px;
+}
+
+.container{
+    margin:auto;
+    width:80%;
+}
+
+.box-1{
+    background-color:#333;
+    color:#fff;
+    padding: 5px;
+    border: 5px blue solid;
+    margin: 20px;
+
+}
+
+.box-1 h1{
+    text-decoration:underline;
+    word-spacing:1em;
+    letter-spacing:0.5em
+}
+.box-2{
+    background-color:#555555;
+    color:#fff;
+    padding:10px;
+    border:10px red dotted;
+    margin:20px;
+}
+.categories{
+    padding:15px;
+    border:15px green solid;
+    border-radius:10px;
+}
+
+.categories h2{
+    text-align:center;
+
+}
+
+.categories ul{
+    padding:0px;
+    padding-left:40px;
+    list-style:none;
+}
+
+.categories li{
+    list-style-image: url("../images/check.jpg");
+    padding-bottom:1px;
+    border-bottom:1px dotted #333;
+    list-style-image: url("../images/check.png")
+}
+
+.block{
+    float: left;
+    padding: 10px;
+    border: #ccc solid;
+    box-sizing: border-box;
+    width: 33.3%
+
+}
+
+.p-box{
+    border:1px solid #000;
+    width: 600px;
+    height: 600px;
+    position: relative;
+    margin: 10px;
+    background-image: url("../images/sampleimg.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.p-box h1{
+    position: absolute;
+    top: 30px;
+    right: 150px;
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 40px;
+    left: 200px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 500px;
+}
