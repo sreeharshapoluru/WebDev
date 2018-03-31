@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning JS</title>
+        <link rel="stylesheet" href="style.css">
+       <!-- <script src="main.js"></script> -->
+    </head>
+    <body onload="showText()">
+        <div class="header">
+            <h1>JS</h1>
+            <p>Youtube videos</p>
+        </div>
+        <div class="container">
+            <center><button onmouseout="clearDate()" onmouseover="showDate()">I am a Button</button></center>
+            <h1 id="text"></h1>
+
+        </div>
+
+
+        <!---- scripts -->
+       <script>
+        //----alert-----------------------------------
+            // alert("JS through script tag")
+
+        //----numbers, strings ,arrays----------------
+            //var num = 35;
+            //var str = "Hello from JS"
+            //var arr1 = [1,2,'str']
+            //var arr2 = new Array(2,3,'str')
+
+        //----loops------------------------------------
+            //----for-----
+            /*for(var i =0;i<11;i++){
+                console.log(i);
+            }
+
+            //----while------
+            /*while(i>0){
+                console.log(i);
+                i--;
+            }*/
+            
+            //---forEach-------
+            /*arr1.forEach(element => {
+                console.log(element);
+            });*/
+
+        //-----conditionals------------------------------
+            //----if else-----
+            /*if(3 == '3'){
+                alert("true")
+            }
+            else{
+                alert("false")
+            }
+            
+            //---switch--------
+            var caseVar="str1"
+            switch(caseVar){
+                case "str1":alert("str1");
+                case "str2":alert("str2");
+                break;
+            }*/
+
+        //-----objects------------------------------------
+
+        //-----Object literals-------
+        /* var person = {
+            firstName: 'Sreeharsha',
+            lastName: 'Poluru',
+            age: 23,
+            adress:{
+                Apt: '02D',
+                City: 'Gainesville',
+                State: 'Florida'
+            },
+            fullName: function(){
+                return this.firstName+" "+this.lastName;
+            }
+        }*/
+
+        //-----Object constructor------
+        /*var apple = new Object();
+        apple.color = 'red';
+        apple.shape = 'round';*/
+
+        /*Fruits = function(color,shape){
+            this.color = color;
+            this.shape = shape;
+        }
+        var apple = new Fruits('red','round');
+        var banana = new Fruits('yellow','enlongated');*/
+
+        //------Events--------------------------------------------
+        
+        /*function showText(){
+            var text = document.getElementById('text')
+            text.innerHTML = 'Hover over the button to display date';
+        }
+
+        function showDate(){
+            var text = document.getElementById('text')
+            text.innerHTML = Date();
+        }
+
+        function clearDate(){
+            var text = document.getElementById('text')
+            text.innerHTML ='';
+        }*/
+
+
+            
+
+        </script>
+        
+    </body>
+</html>

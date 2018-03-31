@@ -1,0 +1,1 @@
+alert("link created between JS and HTML")
