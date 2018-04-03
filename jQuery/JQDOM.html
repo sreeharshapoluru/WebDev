@@ -1,0 +1,105 @@
+<!DOCTYPe html>
+<html>
+<head>
+    <title>jQuery Selector</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <style>
+
+        body{
+            font-size: 17px;
+            font-family: arial;
+            background: #f4f4f4;
+            line-height: 1.5em;
+        }
+        header{
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000 solid;
+            margin-bottom: 10px;
+        }
+        .myClass{
+            color: red;
+            background: black;
+        }
+
+        #container{
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JQuery</h1>
+
+    </header>
+    <div id="container">
+        <button id="btn1">Button 1</button>
+        <p class="para1">Lorem ipsum dolor sit amet.</p>
+        <P class="para2">Lorem ipsum dolor sit amet.</P>
+        <h6>before ul tag</h6>
+        <ul id="lists">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+        <h6>after ul tag</h6>
+        <div id="myDiv">
+        </div>
+        <a href="https://www.google.com" id="ref">Google</a>
+        <br>
+        <input id="text" type="text">
+    </div>
+    <script>
+        //-----------DOM------------------------------------------------------
+        $('#btn1').click(function(){
+            $('p.para1').addClass('myClass');
+        });
+
+         $('#btn1').click(function(){
+            $('p.para2').toggleClass('myClass');
+        });*/
+        
+    
+        //----content manipulation----------------
+        /*$('#myDiv').text('Hello World!');
+        $('#myDiv').html('<h3>Hello World! in h3 tag</h3>');
+        $('#lists').append('<h5>list - append with h5 tag</h5>');
+        $('#lists').append('<li>list - append with li tag</li>');
+        $('#lists').prepend('<h5>list - prepend with h5 tag</h5>');
+        $('#lists').prepend('<li>list - prepend with li tag</li>');
+        $('#lists').before('<h5>list - before</h5>');
+        $('#lists').after('<h5>list - after</h5>');
+        $('#lists').empty();
+        $('#lists').detach();
+        $('#ref').attr('target','_blank');
+        $('#ref').removeAttr('target');
+        $('text').keyup(function(e){
+            var code = e.which;
+            if(code == 13){
+                e.preventDefault();
+                $('#lists').append('<li>'+e.target.value+'</li>'); 
+            }
+        });
+
+
+
+
+
+        
+        
+        
+
+
+        
+        
+   
+    </script>
+
+</body>
+</html>
