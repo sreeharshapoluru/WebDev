@@ -1,0 +1,133 @@
+<!DOCTYPe html>
+<html>
+<head>
+    <title>jQuery Selector</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <style>
+
+        body{
+            font-size: 17px;
+            font-family: arial;
+            background: #f4f4f4;
+            line-height: 1.5em;
+        }
+        header{
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000 solid;
+            margin-bottom: 10px;
+        }
+        .myClass{
+            color: red;
+            background: black;
+        }
+
+        #container{
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+        #box{
+            background: darkgray;
+            color: black;
+            border: solid 2px red;
+            margin: 10px;
+            width: 500px;
+            height: 90px;
+            padding: 40px;
+
+        }
+        #box2{
+            background: darkgray;
+            color: black;
+            border: dotted 3px gray;
+            width: 150px;
+            height: 150px;
+            padding: 40px;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JQuery</h1>
+
+    </header>
+    <div id="container">
+        <button id="fadeOut">Fade Out</button>
+        <button id="fadeIn">Fade In</button>
+        <button id="fadeToggle">Fade Toggle</button>
+        <button id="slideUp">Slide Up</button>
+        <button id="slideDown">Slide Down</button>
+        <button id="slideToggle">Slide Toggle</button>
+        <button id="stop">Stop</button>
+        <br>
+        <h3 id="box">Effects Text</h3>
+        <hr>
+        <br>
+        <br>
+        <button id="moveLeft">Move Left</button>
+        <button id="moveRight">Move Right</button>
+        <button id="moveAround">Move Around</button>
+        <br>
+        <div id="box2"></div>
+    </div>
+    <script>
+        $('#fadeOut').click(function(){
+            $('#box').fadeOut();
+        });
+        $('#fadeIn').click(function(){
+            $('#box').fadeIn();
+        });
+        $('#fadeToggle').click(function(){
+            $('#box').fadeToggle();
+        });
+        $('#slideUp').click(function(){
+            $('#box').slideUp(3000);
+        });
+        $('#slideDown').click(function(){
+            $('#box').slideDown();
+        });
+        $('#slideToggle').click(function(){
+            $('#box').slideToggle();
+        });
+        $('#stop').click(function(){
+            $('#box').stop();
+        });
+        $('#moveLeft').click(function(){
+            $('#box2').animate({
+                left: 0
+            });
+        });
+        $('#moveRight').click(function(){
+            $('#box2').animate({
+                left: 500
+            });
+        });
+        $('#moveAround').click(function(){
+            var box = $('#box2');
+            box.animate({
+                left: 500
+            })
+            box.animate({
+                top: 500,
+                left: 500
+            })
+            box.animate({
+                left: 0,
+                top: 500
+            })
+            box.animate({
+                left: 0,
+                top: 0
+            })
+        });
+    
+        
+    </script>
+
+</body>
+</html>
