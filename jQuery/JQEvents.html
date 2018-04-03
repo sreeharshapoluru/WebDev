@@ -1,0 +1,120 @@
+<!DOCTYPe html>
+<html>
+<head>
+    <title>jQuery Selector</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <style>
+
+        body{
+            font-size: 17px;
+            font-family: arial;
+            background: #f4f4f4;
+            line-height: 1.5em;
+        }
+        header{
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 4px #000 solid;
+            margin-bottom: 10px;
+        }
+
+        #container{
+            width: 90%;
+            margin: auto;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JQuery</h1>
+
+    </header>
+    <div id="container">
+        <!--<button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+        <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita reprehenderit 
+            earum, dicta fugit alias mollitia aspernatur debitis. Dolores beatae numquam error quam 
+            quis consequuntur ea sit excepturi architecto eaque quo quidem voluptate laboriosam nisi 
+            perspiciatis sed maiores, blanditiis sunt cum in quaerat ut similique animi. Odit ducimus 
+            necessitatibus excepturi cum?</p>
+        <h3 id ='coords'></h3> -->
+        <br>
+        <hr>
+
+        <form id="forms">
+            <label>Name:</label>
+            <input type="text" id="name">
+            <br>
+            <label>Email:</label>
+            <input type="text" id="email">
+            <br>
+            <label>Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">male</option>
+                <option value="female">female</option>
+            </select>
+            <br>
+            <input type="submit" value="Submit">
+
+        </form>
+        
+
+    </div>
+
+
+    <script>
+        //----mouse events-----------------------------------------------
+
+        //---click()--------------------------------
+        $('#btn1').click(function(){
+            alert('Button 1 clicked');
+        });
+
+        $('#btn1').on('click',function(){
+            alert('Button 1 clicked');
+        });
+
+        //----hover() - mouseenter() + mouseleave()---
+        $('#btn2').hover(function(){
+            $('.para1').toggle();
+        });
+        
+        //-----event info--------
+        $('#btn1').click(e => {
+            alert(e.currentTarget.id);
+            alert(e.currentTarget.innerHTML);
+        });
+
+        $(document).on('mousemove',function(e){
+            $('#coords').html('X:'+e.clientX+'Y:'+e.clientY)
+
+        });
+
+        //-----------form events------------------------------------------------
+        //------focus()----------
+        $('input#name').focus(function(){
+            $('input#name').css('background','red');
+
+        });
+
+        $('input#name').blur(function(){
+            $('input#name').css('background','white');
+
+        });
+        
+
+
+
+
+
+
+
+        
+    </script>
+
+</body>
+</html>
