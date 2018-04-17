@@ -3,17 +3,21 @@
     <head>
         <title>Learning JS</title>
         <link rel="stylesheet" href="style.css">
+        <script src="mainES6.js" type="text/js"></script>
+        
        <!-- <script src="main.js"></script> -->
     </head>
-    <body onload="showText()">
+    <body></body>
         <div class="header">
             <h1>JS</h1>
             <p>Youtube videos</p>
         </div>
         <div class="container">
-            <center><button onmouseout="clearDate()" onmouseover="showDate()">I am a Button</button></center>
+            <center><button id="imgbtn">Click me to get the pictures</button></center>
             <h1 id="text"></h1>
+            <div id="picGrid">
 
+            </div>
         </div>
 
 
@@ -107,10 +111,6 @@
             var text = document.getElementById('text')
             text.innerHTML ='';
         }*/
-
-
-            
-
         </script>
         
     </body>

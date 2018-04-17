@@ -1,0 +1,1 @@
+I am a being accessed by fetch API
